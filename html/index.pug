@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	//- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="../slick/slick.css"/>
+	<link rel="stylesheet" href="../slick/slick-theme.css"/>
+	<title>Document</title>
+</head>
+<body>
+	.main 
+		.container.text-center
+			.header
+				.row
+					.col.xs-12.col-sm-6.col-md-4.col-lg-3
+						.logo
+							img(src="../img/logo_1.png", alt="")
+					.col-xs-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2
+						.phone-block
+							a(href="").phone-link +7 495 771 05 08
+					.col-xs-12.text-center.col-md-4.col-lg-3
+						.wrap
+							button.button.header-btn.popup-btn получить консультацию
+
+			.main-content
+				.row
+					.col-lg-6.col-md-12
+						.main-title
+							h1 Автоматизированная штукатурка стен
+							p Идеально ровные стены <br>в кратчайшие сроки
+							span стоимость работ <br>от 
+								<strong>300</strong> руб/м
+								<sup>2</sup>
+							strong.main-trigger оплата по факту
+					.col-lg-4.offset-lg-2.col-sm-8.offset-sm-2
+						.main-form
+							h2.text-center Для расчета точной стоимости <br>закажите 
+								strong выезд замерщика
+							form(action="#")
+								label(for="#") Ваше имя
+								input.main-form-input(placeholder="let a message") 
+								label(for="#") Номер телефона
+								input.main-form-input(placeholder="let a message") 
+								button.button.main-form-btn оставте заявку
+								small подарок в день обращения
+
+	section.features
+		.container
+			h2.section-header Преимущества работы с ними
+			.features-slider
+				.features-block
+					.feature-img
+						picture
+							source(srcset="../img/coin.png", type="image/")
+							img.mx-auto.d-block(src="../img/coin.png", alt="")
+					h3 Платите по факту
+					p Вы оплачиваете выполненные<br>работы только после их выполнения.<br>Никаких скрытых доплат и<br>промежуточных платежей.
+				.features-block
+					.feature-img
+						picture
+							source(srcset="../img/folder.png", type="image/")
+							img.mx-auto.d-block(src="../img/folder.png", alt="")
+					h3 Заключаем договор
+					p Перед началом работ заключаем<br>договор на юридическое лицо.<br>Вы можете быть уверены что все<br>обязательства будут выполнены.
+				.features-block
+					.feature-img
+						picture
+							source(srcset="../img/clock.png", type="image/")
+							img.mx-auto.d-block(src="../img/clock.png", alt="")
+					h3 Точно в срок
+					p Работаем строго по установленным<br>срокам, которые прописаны<br>в договоре. Если не успеваем,<br>вы платите меньше.
+				.features-block
+					.feature-img
+						picture
+							source(srcset="../img/pig.png", type="image/")
+							img.mx-auto.d-block(src="../img/pig.png", alt="")
+					h3 Экономите на материалах
+					p Мы являемся структурным<br>подразделением компании<br>поставщика строительных смесей<br><a>gicema.ru</a>  и даем Вам самые<br>выгодные цены.
+					
+	section.prices
+		.container
+			.row
+				.col-md-4.offset-md-4
+					.section-header.section-header_light.mx-auto.text-center
+						h2 Цены
+						p Выберите вариант, который подходит Вам:
+
+				.col-md-4
+					button.button(data-toggle="modal") Расчитать точную стоимость
+
+			.row
+				.col-md-4
+					.price-block.text-center
+						h5 Штукатурка вашим материалом
+						img.mx-auto(src="../img/1.jpg", alt="")
+						span.price-tag от 300 руб/м<sup>2</sup>
+						ul.price-list
+							li Проведение работ
+							li Уборка
+						button.button заказать
+				.col-md-4
+					.price-block.text-center
+						h5 Штукатурка под шпаклевку
+						img.mx-auto(src="../img/2.jpg", alt="")
+						span.price-tag от 530 руб/м<sup>2</sup>
+						ul.price-list
+							li Завоз материала и его подьем
+							li Проведение работ
+							li Уборка
+							li Гарантия 2 года
+						button.button заказать
+				.col-md-4.text-center
+					.price-block.text-center
+						h5 Штукатурка под обои
+						img.mx-auto(src="../img/3.jpg", alt="")
+						span.price-tag от 560 руб/м<sup>2</sup>
+						ul.price-list
+							li Завоз материала и его подьем
+							li Проведение работ
+							li Уборка
+							li Гарантия 2 года
+							li Можно сразу клеить обои
+						button.button заказать
+
+
+	.popup
+		.popup-dialog
+			.popup-content.text-center
+				button.popup-close &times;
+				h4.popup-header Заинтересовало?
+				p Оставьте свои контактные данные <br>для связи<br>
+				.popup-form
+					form(action="")
+						label(for="#") Ваше имя
+						input.main-form-input(placeholder="let a message")
+						label(for="#") Номер телефона
+						input.main-form-input(placeholder="let a message") 
+						label(for="#") сообщение
+						textarea.main-form-input(rows="5")
+						button.button.main-form-btn оставте заявку
+
+
+	
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/csript.js"></script>
+	
+
+	
+	
+</body>
+</html>
